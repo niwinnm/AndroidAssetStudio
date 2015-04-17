@@ -2608,6 +2608,7 @@ imagelib.effects.castShade = function(imgData, x, y) {
   var step = n / (imgData.width + imgData.height);
   var alpha = n - ((x + y) * step);
   var color = [0, 0, 0, 100];
+  alert('shade called');
   //if (imgData.width == 48) console.log('shade alpha = ' + alpha + ' for ' + x + ',' + y);
   return imagelib.effects.setColor(imgData, x, y, color);
 };
