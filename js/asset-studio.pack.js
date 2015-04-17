@@ -1467,13 +1467,12 @@ Base = Base.extend({
                 return true
             }
         }
-    };
+    };//custom made change to n value - niwin
     imagelib.effects.castShade = function(imgData, x, y) {
         var n = 100;
         var step = n / (imgData.width + imgData.height);
         var alpha = n - ((x + y) * step);
         var color = [0, 0, 0, alpha];
-        alert(alpha);
         return imagelib.effects.setColor(imgData, x, y, color)
     };
     imagelib.effects.setColor = function(imgData, x, y, color) {
