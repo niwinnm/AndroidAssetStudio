@@ -1473,6 +1473,7 @@ Base = Base.extend({
         var step = n / (imgData.width + imgData.height);
         var alpha = n - ((x + y) * step);
         var color = [0, 0, 0, alpha];
+        alert(alpha);
         return imagelib.effects.setColor(imgData, x, y, color)
     };
     imagelib.effects.setColor = function(imgData, x, y, color) {
