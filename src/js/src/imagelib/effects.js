@@ -34,7 +34,7 @@ imagelib.effects.renderScore = function(ctx, w, h) {
   var imgData = ctx.getImageData(0, 0, w, h);
   for(var y = 0; y < imgData.height/2; y++) {
     for(var x = 0; x < imgData.width; x++) {
-      var color = [0, 0, 0, 24];
+      var color = [0, 0, 0, 100];
       imagelib.effects.setColor(imgData, x, y, color);
     }
   }
