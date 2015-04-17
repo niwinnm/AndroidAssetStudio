@@ -2602,11 +2602,12 @@ imagelib.effects.isInShade = function(imgData, x, y) {
   }
 };
 
+//custom caste shade - niwin
 imagelib.effects.castShade = function(imgData, x, y) {
   var n = 100;
   var step = n / (imgData.width + imgData.height);
   var alpha = n - ((x + y) * step);
-  var color = [0, 0, 0, 40];
+  var color = [0, 0, 0, 100];
   //if (imgData.width == 48) console.log('shade alpha = ' + alpha + ' for ' + x + ',' + y);
   return imagelib.effects.setColor(imgData, x, y, color);
 };
